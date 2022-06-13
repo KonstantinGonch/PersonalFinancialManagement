@@ -11,6 +11,10 @@ namespace PersonalFinancialManagement.DbMiddleware
     public class AppDataContext : DbContext
     {
         public DbSet<Profile> Profiles { get; set; }
+        public DbSet<SavingGoal> SavingGoals { get; set; }
+        public DbSet<ConstantSpending> ConstantSpendings { get; set; }
+        public DbSet<DailySpending> DailySpendings { get; set; }
+        public DbSet<Income> Incomes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
